@@ -1,8 +1,7 @@
 name: "issue labeler"
 
-on: 
-  schedule:
-    - label: 'on track, concern, at risk'
+on: [push]
+
       
 jobs:
   build:
@@ -14,7 +13,7 @@ steps:
     # Github token
     github-token: 
     # keywords to look for in the issue
-    keywords: on track
+    keywords: on track, concern, at risk
     # assignees to be assigned when keyword is found
     assignees: # optional
     comment: "Remember to ping the docs team when starting work on a new inititaive"
