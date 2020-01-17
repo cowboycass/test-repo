@@ -1,0 +1,30 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      run: echo Hello, world!
+    - name: Run a multi-line script
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
+        
+        - name: Issue Labeler
+  uses: Naturalclar/issue-action@v1.0.0
+  with:
+    # Github token
+    github-token: 
+    # keywords to look for in the issue
+    keywords: 
+    # assignees to be assigned when keyword is found
+    assignees: # optional
+    # labels to be set when keyword is found
+    labels: # on track, concern, at risk
+    comment: 'Please remember to ping the docs team now that work has begun on this issue.'
