@@ -9,13 +9,12 @@ jobs:
     runs-on: ubuntu-latest
 
 steps: 
-   - name: Issue Labeler
   uses: Naturalclar/issue-action@v1.0.0
   with:
     # Github token
     github-token: 
     # keywords to look for in the issue
-    keywords: "on track", concern, "at risk"
+    keywords: on track
     # assignees to be assigned when keyword is found
     assignees: # optional
     comment: "Remember to ping the docs team when starting work on a new inititaive"
